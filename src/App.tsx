@@ -72,7 +72,7 @@ function App(): JSX.Element {
     <View style={styles.container}>
       <Dice imageUrl={diceImage} />
       <Pressable onPress={rollDiceOnTap}>
-        <Text style={styles.rollDiceBtnText}>Roll the dice</Text>
+        <Text style={styles.rollDiceBtnText}>Roll the dic</Text>
       </Pressable>
     </View>
   );
