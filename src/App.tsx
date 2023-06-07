@@ -25,7 +25,7 @@ const options = {
   ignoreAndroidSystemSettings: false,
 };
 
-const Dice = ({imageUrl}: DiceProps): JSX.Element => {
+const Dice = ({imageUrl}: DiceProps): React.JSX.Element => {
   
   return(
     <View>
@@ -34,7 +34,7 @@ const Dice = ({imageUrl}: DiceProps): JSX.Element => {
   );
 }
 
-function App(): JSX.Element {
+function App(): React.JSX.Element {
   const [diceImage, setDiceImage] = useState<ImageSourcePropType>(DiceOne);
   
   const rollDiceOnTap = () => {
@@ -72,7 +72,7 @@ function App(): JSX.Element {
     <View style={styles.container}>
       <Dice imageUrl={diceImage} />
       <Pressable onPress={rollDiceOnTap}>
-        <Text style={styles.rollDiceBtnText}>Roll the dic</Text>
+        <Text style={styles.rollDiceBtnText}>Roll the dice</Text>
       </Pressable>
     </View>
   );
